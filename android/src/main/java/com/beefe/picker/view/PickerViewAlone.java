@@ -1,7 +1,6 @@
 package com.beefe.picker.view;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -209,17 +208,6 @@ public class PickerViewAlone extends LinearLayout {
             if (view instanceof LoopView) {
                 LoopView loopView = (LoopView) view;
                 loopView.setTextSize(size);
-            }
-        }
-    }
-
-    public void setTypeface(Typeface typeface){
-        int viewCount = pickerViewAloneLayout.getChildCount();
-        for (int i = 0; i < viewCount; i++) {
-            View view = pickerViewAloneLayout.getChildAt(i);
-            if (view instanceof LoopView) {
-                LoopView loopView = (LoopView) view;
-                loopView.setTypeface(typeface);
             }
         }
     }
